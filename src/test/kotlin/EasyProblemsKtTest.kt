@@ -36,4 +36,13 @@ class EasyProblemsKtTest {
         assertEquals(58, romanToInt("LVIII"))
         assertEquals(1994, romanToInt("MCMXCIV"))
     }
+
+    @Test
+    fun longestCommonPrefix() {
+        assertEquals("fl", longestCommonPrefix(arrayOf("flower", "flow", "flight")))
+        assertEquals("", longestCommonPrefix(arrayOf("dog", "racecar", "car")))
+        assertEquals("a", longestCommonPrefix(arrayOf("a")))
+        assertEquals("a", longestCommonPrefix(arrayOf("ab", "a")))
+        assertEquals("flower", longestCommonPrefix(arrayOf("flower","flower","flower","flower")))
+    }
 }

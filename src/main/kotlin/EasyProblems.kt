@@ -49,3 +49,23 @@ fun romanToInt(s: String): Int {
 
     return accumulator;
 }
+
+// Problem 14
+fun longestCommonPrefix(strs: Array<String>): String {
+    if (strs.isEmpty()) {
+        return ""
+    }
+    var commonString = strs[0]
+    strs.forEach { value  ->
+        if (commonString.length > value.length) {
+            commonString = commonString.substring(0, value.length)
+        }
+        for (i in 0..<commonString.length) {
+            if (commonString[i] != value[i]) {
+                commonString = commonString.substring(0, i)
+                break
+            }
+        }
+    }
+    return commonString
+}
