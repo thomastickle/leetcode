@@ -1,3 +1,5 @@
+import java.util.*
+
 // LeetCode Problem 1
 fun twoSum(nums: IntArray, target: Int): IntArray {
     for (i in 0 until nums.size) {
@@ -68,4 +70,34 @@ fun longestCommonPrefix(strs: Array<String>): String {
         }
     }
     return commonString
+}
+
+// Problem 20
+fun isPair(firstChar: Char, secondChar: Char): Boolean {
+    return when(firstChar) {
+        '(' -> secondChar == ')'
+        '{' -> secondChar == '}'
+        '[' -> secondChar == ']'
+        else -> false
+    }
+}
+
+fun isValid(s: String): Boolean {
+    val stack = Stack<Char>()
+
+    for (i in 0..< s.length) {
+        when(s[i]) {
+            '(','{', '[' -> stack.push(s[i])
+            else -> {
+                if (stack.isEmpty()) {
+                    return false
+                }
+                if (!isPair(stack.peek(), s[i])) {
+                    return false
+                }
+                stack.pop();
+            }
+        }
+    }
+    return stack.isEmpty()
 }

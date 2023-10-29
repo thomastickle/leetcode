@@ -45,4 +45,13 @@ class EasyProblemsKtTest {
         assertEquals("a", longestCommonPrefix(arrayOf("ab", "a")))
         assertEquals("flower", longestCommonPrefix(arrayOf("flower","flower","flower","flower")))
     }
+
+    @Test
+    fun isValid() {
+        assertTrue(isValid("()"))
+        assertTrue(isValid("()[]{}"))
+        assertFalse(isValid("(]"))
+        assertFalse(isValid("["))
+        assertFalse(isValid("]"))
+    }
 }
