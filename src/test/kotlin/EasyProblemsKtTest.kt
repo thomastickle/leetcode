@@ -29,4 +29,11 @@ class EasyProblemsKtTest {
         assertFalse(isPalindrome(10))
         assertTrue(isPalindrome(11))
     }
+
+    @Test
+    fun romanToInt() {
+        assertEquals(3, romanToInt("III"))
+        assertEquals(58, romanToInt("LVIII"))
+        assertEquals(1994, romanToInt("MCMXCIV"))
+    }
 }
