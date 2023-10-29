@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-class Problem1TwoSumKtTest {
+class EasyProblemsKtTest {
 
     @Test
     fun twoSum() {
@@ -20,5 +20,13 @@ class Problem1TwoSumKtTest {
         val target3 = 6
         val indexes3 = twoSum(nums3, target3)
         assertArrayEquals(intArrayOf(0,1), indexes3)
+    }
+
+    @Test
+    fun isPalindrome() {
+        assertTrue(isPalindrome(121))
+        assertFalse(isPalindrome(-121))
+        assertFalse(isPalindrome(10))
+        assertTrue(isPalindrome(11))
     }
 }
