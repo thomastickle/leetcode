@@ -2,7 +2,7 @@ package com.github.thomastickle.leetcode.problem
 
 import java.util.*
 
-class Problem20ValidParentheses {
+class Problem20 {
 
     private fun isPair(firstChar: Char, secondChar: Char): Boolean {
         return when(firstChar) {

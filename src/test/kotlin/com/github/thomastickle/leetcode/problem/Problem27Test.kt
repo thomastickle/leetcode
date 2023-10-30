@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-class Problem27RemoveElementTest {
+class Problem27Test {
 
-    val problem = Problem27RemoveElement()
+    val problem = Problem27()
 
     @Test
     fun removeElement() {

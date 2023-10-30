@@ -5,7 +5,7 @@ class  ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-class Problem21MergeTwoSortedLists {
+class Problem21 {
 
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?) : ListNode? {
         val result = ListNode(0)

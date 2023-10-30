@@ -1,6 +1,6 @@
 package com.github.thomastickle.leetcode.problem
 
-class Problem14LongestCommonPrefix {
+class Problem14 {
     fun longestCommonPrefix(strs: Array<String>): String {
         if (strs.isEmpty()) {
             return ""

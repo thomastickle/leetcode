@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-class Problem21MergeTwoSortedListsTest {
+class Problem21Test {
 
     fun constructListFromValues(vararg values: Int): ListNode? {
         var head: ListNode? = null
@@ -46,13 +46,13 @@ class Problem21MergeTwoSortedListsTest {
 
     @Test
     fun mergeTwoLists() {
-        val list = Problem21MergeTwoSortedLists().mergeTwoLists(constructListFromValues(1, 2, 4), constructListFromValues(1, 3, 4))
+        val list = Problem21().mergeTwoLists(constructListFromValues(1, 2, 4), constructListFromValues(1, 3, 4))
         assertTrue(verifyList(listOf(1, 1, 2, 3, 4, 4), list))
 
-        val list2 = Problem21MergeTwoSortedLists().mergeTwoLists(null, null)
+        val list2 = Problem21().mergeTwoLists(null, null)
         assertTrue(verifyList(emptyList(), list2))
 
-        val list3 = Problem21MergeTwoSortedLists().mergeTwoLists(null, constructListFromValues(0))
+        val list3 = Problem21().mergeTwoLists(null, constructListFromValues(0))
         assertTrue(verifyList(emptyList(), list3))
     }
 }

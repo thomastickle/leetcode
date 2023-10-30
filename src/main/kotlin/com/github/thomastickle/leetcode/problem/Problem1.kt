@@ -1,6 +1,6 @@
 package com.github.thomastickle.leetcode.problem
 
-class Problem1TwoSum {
+class Problem1 {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         for (i in nums.indices) {
             val remainder = target - nums[i]

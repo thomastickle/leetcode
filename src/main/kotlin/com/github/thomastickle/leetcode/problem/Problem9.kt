@@ -1,6 +1,6 @@
 package com.github.thomastickle.leetcode.problem
 
-class Problem9IsPalindrome {
+class Problem9 {
 
     fun PalidromeNumber(x: Int): Boolean {
         val asString = x.toString()

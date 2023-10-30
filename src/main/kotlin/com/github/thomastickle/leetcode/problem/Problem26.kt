@@ -1,6 +1,6 @@
 package com.github.thomastickle.leetcode.problem
 
-class Problem26RemoveDuplicatesFromSortedArray {
+class Problem26 {
     fun removeDuplicates(nums: IntArray): Int {
         var count = 1
         for (i in 1 until nums.size) {

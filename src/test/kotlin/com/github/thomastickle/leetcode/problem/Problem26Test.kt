@@ -3,9 +3,9 @@ package com.github.thomastickle.leetcode.problem
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class Problem26RemoveDuplicatesFromSortedArrayTest {
+class Problem26Test {
 
-    val problem = Problem26RemoveDuplicatesFromSortedArray()
+    val problem = Problem26()
 
     @Test
     fun testRemoveDuplicates() {
