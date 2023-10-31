@@ -13,7 +13,7 @@ class Problem58Test {
         val length = problem.lengthOfLastWord("Hello World")
         assertEquals(5, length)
 
-        val length2 = problem.lengthOfLastWord("   fly me   to   the moon  ");
+        val length2 = problem.lengthOfLastWord("   fly me   to   the moon  ")
         assertEquals(4, length2)
 
         val length3 = problem.lengthOfLastWord("luffy is still joyboy")

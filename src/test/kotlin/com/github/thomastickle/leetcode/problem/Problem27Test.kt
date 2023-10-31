@@ -12,7 +12,7 @@ class Problem27Test {
     fun removeElement() {
         val intArray = intArrayOf(3, 2, 2, 3)
         val result = problem.removeElement(intArray, 3)
-        assertEquals(2, result);
+        assertEquals(2, result)
         assertEquals(2, intArray[0] )
         assertEquals(2, intArray[1])
     }

@@ -34,7 +34,7 @@ class Problem21Test {
     }
 
     private fun verifyList(values: List<Int>, list: ListNode?): Boolean {
-        var current = list;
+        var current = list
         for ( i in values) {
             if (current == null || i != current.`val`) {
                 return false

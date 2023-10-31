@@ -10,7 +10,7 @@ class Problem26Test {
     @Test
     fun testRemoveDuplicates() {
         val nums = intArrayOf(1,1,2)
-        val value = problem.removeDuplicates(nums);
+        val value = problem.removeDuplicates(nums)
         assertEquals(2, value)
         var array = IntArray(3)
         array[0] = 1
