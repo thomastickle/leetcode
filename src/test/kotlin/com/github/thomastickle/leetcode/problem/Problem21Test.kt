@@ -6,21 +6,6 @@ import org.junit.jupiter.api.Assertions.*
 
 class Problem21Test {
 
-    fun constructListFromValues(vararg values: Int): ListNode? {
-        var head: ListNode? = null
-        var current: ListNode? = null
-        values.forEach {
-            if (head == null) {
-                head = ListNode(it)
-                current = head
-            } else {
-                current?.next = ListNode(it)
-                current = current?.next
-            }
-        }
-        return head
-    }
-
     @Test
     fun constructListFromArray() {
         val list = constructListFromValues(1, 2, 4)
