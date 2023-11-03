@@ -6,7 +6,7 @@ class Problem119 {
         val list = mutableListOf<List<Int>>()
 
         repeat(numRows) { row ->
-            list.add(MutableList(row + 1) { it ->
+            list.add(MutableList(row + 1) {
                 when (it) {
                     0, row -> 1
                     else -> list[row - 1][it - 1] + list[row - 1][it]

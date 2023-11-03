@@ -1,7 +1,7 @@
 package com.github.thomastickle.leetcode.problem
 
 class Problem88 {
-    fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
+    fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
         var nums1Pointer = m - 1
         var nums2Pointer = n - 1
         var editingPointer = m + n - 1

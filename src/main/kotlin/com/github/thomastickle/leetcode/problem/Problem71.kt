@@ -2,7 +2,7 @@ package com.github.thomastickle.leetcode.problem
 
 class Problem71 {
     fun deleteDuplicates(head: ListNode?): ListNode? {
-        if (head == null || head?.next == null) {
+        if (head?.next == null) {
             return head
         }
         var currentNode = head

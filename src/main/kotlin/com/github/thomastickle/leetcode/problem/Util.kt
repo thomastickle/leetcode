@@ -23,7 +23,7 @@ fun constructTreeFromValues(treeValues: List<Int?>): TreeNode? {
         node.left = constructTree(list, 2 * start + 1)
         node.right = constructTree(list, 2 * start + 2)
 
-        return node;
+        return node
     }
 
 

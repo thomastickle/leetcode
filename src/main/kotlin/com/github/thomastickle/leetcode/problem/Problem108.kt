@@ -8,7 +8,7 @@ class Problem108 {
             val node = TreeNode(nums[mid])
             node.left = insertNodeIntoTree(nums, left, mid - 1)
             node.right = insertNodeIntoTree(nums, mid + 1, right)
-            return node;
+            return node
         }
 
 
