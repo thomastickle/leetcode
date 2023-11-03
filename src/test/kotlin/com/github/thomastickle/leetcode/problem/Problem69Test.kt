@@ -12,6 +12,6 @@ class Problem69Test {
     fun mySqrt() {
         assertEquals(2, problem.mySqrt(4))
         assertEquals(2, problem.mySqrt(8))
-        assertEquals(1, problem.mySqrt(0))
+        assertEquals(0, problem.mySqrt(0))
     }
 }

@@ -14,6 +14,6 @@ class Problem28Test {
         assertEquals(0, index)
 
         val index2 = problem.strStr("leetcode", "leeto")
-        assertEquals(-1, 0)
+        assertEquals(-1, index2)
     }
 }
