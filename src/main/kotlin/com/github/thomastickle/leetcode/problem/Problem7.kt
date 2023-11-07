@@ -2,20 +2,16 @@ package com.github.thomastickle.leetcode.problem
 
 class Problem7 {
     fun reverse(x: Int): Int {
-        val reversed = if (x >= 0) x.toString().reversed() else x.toString().substring(1).reversed()
-
+        var currentVal = x
 
         var result = 0;
-        try {
-            result = reversed.toInt()
-            if (x < 0) {
-                result = result * -1
+        while (currentVal != 0) {
+            result = result * 10 + currentVal % 10
+            if (result % 10 != currentVal % 10) {
+                return 0
             }
-        } catch (e: NumberFormatException) {
-            // do nothing
+            currentVal /= 10
         }
-
-
 
         return result
     }
