@@ -27,7 +27,6 @@ class Problem8 {
             else -> 1
         }
 
-
         while (index < s.length && s[index].isDigit()) {
             val value = s[index] - '0'
 
