@@ -8,9 +8,9 @@ class TreeNode(var `val`: Int) {
 class Problem94 {
 
     fun inorderTraversal(root: TreeNode?): List<Int> {
-        when (root) {
-            null -> return emptyList()
-            else -> return inorderTraversal(root.left) + listOf(root.`val`) + inorderTraversal(root.right)
+        return when (root) {
+            null -> emptyList()
+            else -> inorderTraversal(root.left) + listOf(root.`val`) + inorderTraversal(root.right)
         }
     }
 }

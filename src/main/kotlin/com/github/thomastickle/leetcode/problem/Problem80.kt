@@ -8,7 +8,7 @@ class Problem80 {
 
 
         while (scanPointer < nums.size) {
-            currentValue = nums[scanPointer];
+            currentValue = nums[scanPointer]
             var count = 0
             while (scanPointer < nums.size && currentValue == nums[scanPointer] && count < 2) {
                 nums[insertionPointer++] = nums[scanPointer++]

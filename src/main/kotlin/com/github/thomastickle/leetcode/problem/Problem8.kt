@@ -2,8 +2,8 @@ package com.github.thomastickle.leetcode.problem
 
 class Problem8 {
     fun myAtoi(s: String): Int {
-        var result = 0;
-        var index = 0;
+        var result = 0
+        var index = 0
 
         while (index < s.length && s[index].isWhitespace()) {
             index++
