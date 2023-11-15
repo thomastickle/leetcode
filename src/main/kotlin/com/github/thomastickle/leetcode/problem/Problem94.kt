@@ -1,9 +1,6 @@
 package com.github.thomastickle.leetcode.problem
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
+
 
 class Problem94 {
 

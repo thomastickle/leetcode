@@ -1,10 +1,6 @@
 package com.github.thomastickle.leetcode.problem
 
 
-class  ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
-
 class Problem21 {
 
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?) : ListNode? {

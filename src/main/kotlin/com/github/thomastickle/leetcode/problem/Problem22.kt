@@ -8,8 +8,6 @@ class Problem22 {
             result += "()"
         }
 
-
-
         return result
     }
 }

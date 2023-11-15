@@ -1,5 +1,14 @@
 package com.github.thomastickle.leetcode.problem
 
+class TreeNode(var `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+}
+
+class  ListNode(var `val`: Int) {
+    var next: ListNode? = null
+}
+
 fun constructListFromValues(vararg values: Int): ListNode? {
     var head: ListNode? = null
     var current: ListNode? = null
